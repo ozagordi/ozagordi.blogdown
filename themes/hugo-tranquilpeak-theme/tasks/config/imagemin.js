@@ -1,23 +1,11 @@
+const mozjpeg = require('imagemin-mozjpeg');
 module.exports = function(grunt) {
   grunt.config.set('imagemin', {
     imagemin: {
-        // static: {
-        //     options: {
-        //         optimizationLevel: 3,
-        //         svgoPlugins: [{removeViewBox: false}],
-        //         use: [mozjpeg()] // Example plugin usage
-        //     },
-        //     files: {
-        //         'dist/img.png': 'src/img.png',
-        //         'dist/img.jpg': 'src/img.jpg',
-        //         'dist/img.gif': 'src/img.gif',
-        //         'dist/img.jpg': 'src/images/alps.jpg'
-        //     }
-        // },
           options: {
               optimizationLevel: 3,
-              svgoPlugins: [{removeViewBox: false}]
-              // use: [mozjpeg()] // Example plugin usage
+              svgoPlugins: [{removeViewBox: false}],
+              use: [mozjpeg()] // Example plugin usage
           },
             files: [{
                 expand: true,

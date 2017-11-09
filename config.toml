@@ -18,7 +18,7 @@ defaultContentLanguage = "en-gb"
 title = "Sharp Bell"
 theme = "hugo-tranquilpeak-theme"
 # disqusShortname = "hugo-tranquilpeak-theme"
-# googleAnalytics = "UA-123-45"
+# googleAnalytics = "UA-12345678-9"  "UA-80133486-1"
 paginate = 7
 canonifyurls = true
 
@@ -120,7 +120,7 @@ canonifyurls = true
   dateFormat = "2 January 2006"
 
   # Global keywords configuration. Following keywords will be add to every pages
-  # keywords = ["development", "next-gen"]
+  keywords = ["data", "science", "data science"]
 
   # Syntax highlighter, possible choice between: "highligth.js" (recommanded) and "prism.js" (experimental)
   # You can comment it to disable syntax highligthing
@@ -133,7 +133,7 @@ canonifyurls = true
   # If false it will flat categories.
   hierarchicalCategories = false
 
-  description = "Sharp bell"
+  description = "Sharp bell: personal blog of Osvaldo Zagordi. University of Zurich and founder of enGene Statistics. Data science, statistics, science, machine learning, python, R and so on."
 
   # Customization
   # Define the behavior of the sidebar
