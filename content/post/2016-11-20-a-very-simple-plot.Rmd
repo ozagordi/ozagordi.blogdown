@@ -4,8 +4,9 @@ author: "Osvaldo"
 categories: ["data"]
 tags: ["dataviz"]
 date: "2016-11-20"
-coverImage: https://drive.google.com/uc?export=view&id=1ql1R0ZHbgQEEoaxbusyiHyxmRh9m1UEv
-thumbnailImage: https://drive.google.com/uc?export=view&id=1J-Z5Ml5FMf4mz7TtKOeTdkHNHpH3K3lS
+coverImage: "/img/alps.jpg"
+thumbnailImage: "/img/alps_tn.jpg"
+coverMeta: out
 thumbnailImagePosition: left
 metaAlignment: center
 ---
@@ -30,7 +31,7 @@ entire trip but the TGV, first introduced in 1981, completes the trip in less
 than three hours. A red line overlayed on the schedule of 100 years before
 marks the progress made.
 
-![Marey's schedule with TGV overlaid](https://drive.google.com/uc?export=view&id=1Jt_ErcIO12lNBwfyhoiMfT7oehMFYVM2)
+![Marey's schedule with TGV overlaid](/img/marey_tgv.jpg)
 
 I like these plots because of their simplicity: position vs. time; something I
 must have seen for the first time in secondary school or even earlier. Angle,

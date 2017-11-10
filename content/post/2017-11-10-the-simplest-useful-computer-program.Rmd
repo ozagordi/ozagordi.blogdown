@@ -11,7 +11,8 @@ tags:
 ---
 
 You might have heard of the [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program before,
-a very simple program whose only task is to print _Hello, World!_. 
+a very simple program whose only task is to print _Hello, World!_.
+
 <!--more-->
 
 Being so simple, it is often used to show the syntax
@@ -23,6 +24,9 @@ be probably impossible to convince them of the relevance of computer programming
 Attention conservation notice.
 {{< /alert >}}
 
+{{< hl-text danger >}}
+your highlighted text
+{{< /hl-text >}}
 
 So, let's try to write a program that exposes the fundamental building blocks of programming, is very simple and yet a
 bit useful.

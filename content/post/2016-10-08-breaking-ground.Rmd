@@ -4,6 +4,10 @@ author: Osvaldo
 date: "2016-10-08"
 categories: ["science"]
 tags: ["mathematics", "dataviz", "d3"]
+coverImage: "/img/crack.jpg"
+coverMeta: out
+thumbnailImage: "/img/crack_tn.jpg"
+thumbnailImagePosition: bottom
 customjs:
   - https://d3js.org/d3.v3.js
 ---

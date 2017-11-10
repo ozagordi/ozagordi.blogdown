@@ -4,9 +4,10 @@ author: "Osvaldo"
 categories: ["science"]
 tags: ["fundamentals", "mathematics"]
 date: "2016-09-07"
-coverImage: https://drive.google.com/uc?export=view&id=1b8tL1EmD51k6pHPUkwzThw6TQodYCEC4
-thumbnailImage: https://drive.google.com/uc?export=view&id=1dhFNxW8DackKMFAc7grT0zGA2gC5FF_c
-thumbnailImagePosition: top
+coverImage: "/img/cradle.jpg"
+coverMeta: out
+thumbnailImage: "/img/cradle_tn.jpg"
+thumbnailImagePosition: bottom
 ---
 
 One of the nice things of my job is the close contact between the experiments
@@ -43,7 +44,7 @@ taking place in the lab. Thus, it is easily interpretable.
 
 It was great, but it took quite some time.
 
-![Graphical representation of a generative model]({{ site.baseurl }}/img/model.png)
+![Graphical representation of a generative model](/img/model.png)
 
 But do you always need such a model? According to [some](http://r4ds.had.co.nz/model-intro.html),
 <q>the goal of a model is to provide a simple low-dimensional summary of a dataset</q>,
