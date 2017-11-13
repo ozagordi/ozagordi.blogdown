@@ -6,6 +6,7 @@ $open-sans:            'Open Sans';
 $open-sans-sans-serif: 'Abel', 'Open Sans', sans-serif;
 $merriweather-serif:   'Merriweather', serif;
 $menlo:                 Menlo, Consolas, monospace;
+$lora-sans-serif:      'Lora', sans-serif;
 
 $font-family-base: $open-sans-sans-serif;
 
@@ -18,7 +19,7 @@ $font-families: (
    'image-gallery':     $open-sans,
    'post-header-cover': $merriweather-serif,
    'post-meta':         $open-sans-sans-serif,
-   'post-content':      $merriweather-serif,
+   'post-content':      $open-sans-sans-serif,
    'post-excerpt-link': $open-sans-sans-serif,
    'highlight':         $menlo,
    // layout
@@ -26,8 +27,8 @@ $font-families: (
 );
 
 // equal to 15px
-$font-size-base:      1.6rem;
-$font-color-base:     #5d686f;
+$font-size-base:      1.9rem;
+$font-color-base:     #657b83; // #5d686f;
 $line-height-base:    1.9em;
 $letter-spacing-base: 0.01em;
 
@@ -35,15 +36,26 @@ $letter-spacing-base: 0.01em;
 $font-size-base-sm-screen-reduction-factor: 0.1rem;
 
 // Font size : (X.Xrem = XXpx, 1.0rem = 10px)
+// $font-size: (
+//     'xxlarge': 2rem,
+//     'xlarge':  1.8rem,
+//     'large':   1.7rem,
+//     'base':    $font-size-base,
+//     'medium':  1.5rem,
+//     'small':   1.3rem,
+//     'xsmall':  1rem
+// );
+
 $font-size: (
-    'xxlarge': 2rem,
-    'xlarge': 1.8rem,
-    'large':  1.7rem,
-    'base':   $font-size-base,
-    'medium': 1.5rem,
-    'small':  1.3rem,
-    'xsmall': 1rem
+    'xxlarge': 2.3rem,
+    'xlarge':  2.1rem,
+    'large':   2.0rem,
+    'base':    $font-size-base,
+    'medium':  1.7rem,
+    'small':   1.5rem,
+    'xsmall':  1.2rem
 );
+
 
 // Colors
 $colors: (
@@ -139,7 +151,8 @@ $about: (
 // Header
 $header:(
     'height':     55px,
-    'background': #fff,
+    //'background': #fff,
+    'background': #fdf6e3,
     'color':      #88909a,
     'border':     1px solid #eef2f8
 );
@@ -156,7 +169,8 @@ $sidebar: (
 // Main
 $main: (
     'padding-top':      15px,
-    'background-color': #fff
+    // 'background-color': #fff
+    'background-color': #fdf6e3
 );
 
 // Components settings
