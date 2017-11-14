@@ -16,7 +16,8 @@ body {
     padding:        0;
     background:     white;
     font-family:    $font-family-base;
-    font-size:      map-get($font-size, base);
+    font-size:      map-get($font-size, xxlarge);
+    font-weight:    lighter;
     line-height:    $line-height-base;
     letter-spacing: $letter-spacing-base;
     // Improve smoothing of the font by adding subpixel in Safari
@@ -38,7 +39,8 @@ h6 {
     font-family:    map-get($font-families, 'headings');
     font-weight:    700;
     line-height:    1.45em;
-    color:          #4a4a4a;
+    //color:          #4a4a4a;
+    color:          $font-color-heading;
 }
 
 h1,
@@ -191,4 +193,3 @@ blockquote {
         }
     }
 }
-    

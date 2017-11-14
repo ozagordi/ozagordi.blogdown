@@ -30,8 +30,9 @@ body {
   padding: 0;
   background: white;
   font-family: "Abel", "Open Sans", sans-serif;
-  font-size: 1.9rem;
-  line-height: 1.9em;
+  font-size: 2.3rem;
+  font-weight: lighter;
+  line-height: 1.5em;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased; }
@@ -48,7 +49,7 @@ h6 {
   font-family: "Abel", "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 1.45em;
-  color: #4a4a4a; }
+  color: #268bd2; }
 
 h1,
 h2,
@@ -248,7 +249,7 @@ pre.code-highlight > code {
     #about #about-card #about-card-location,
     #about #about-card #about-card-bio {
       font-size: 1.9rem;
-      line-height: 1.9em;
+      line-height: 1.5em;
       font-weight: 400;
       color: #657b83; }
 
@@ -439,7 +440,7 @@ pre.code-highlight > code {
   position: fixed;
   top: 0;
   border: 1px solid #eef2f8;
-  color: #88909a;
+  color: #268bd2;
   z-index: 20;
   transition: transform .25s ease-in-out;
   -webkit-transition: -webkit-transform .25s ease-in-out;
@@ -457,7 +458,7 @@ pre.code-highlight > code {
     display: block;
     width: 30px;
     height: 30px;
-    color: #88909a; }
+    color: #268bd2; }
     #header .header-right-picture .header-picture {
       display: block;
       width: 30px;
@@ -467,17 +468,17 @@ pre.code-highlight > code {
     position: absolute;
     top: 12.5px;
     right: 20px;
-    color: #88909a; }
+    color: #268bd2; }
   #header .header-title {
     text-align: center;
     font-size: 1.9rem;
     line-height: 55px;
     margin: 0; }
     #header .header-title .header-title-link {
-      color: #88909a;
+      color: #268bd2;
       font-weight: normal; }
       #header .header-title .header-title-link:hover, #header .header-title .header-title-link:active {
-        color: #6e7681;
+        color: #1e6ea7;
         text-decoration: none; }
   #header.header-up {
     -webkit-transform: translate3d(0, -55px, 0);
@@ -636,7 +637,7 @@ pre.code-highlight > code {
   #sidebar .sidebar-container {
     overflow: auto; }
   #sidebar .sidebar-profile {
-    color: #ebebeb;
+    color: #657b83;
     text-align: center;
     padding-top: 18px;
     margin-bottom: 15px; }
@@ -645,7 +646,7 @@ pre.code-highlight > code {
       margin: 0 auto; }
     #sidebar .sidebar-profile .sidebar-profile-name {
       font-size: 1.1em;
-      color: #ebebeb; }
+      color: #657b83; }
   #sidebar ul.sidebar-buttons {
     padding: 0;
     margin: 0 0 20px 0; }
@@ -655,12 +656,12 @@ pre.code-highlight > code {
       height: 45px;
       line-height: 45px; }
       #sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link {
-        color: #ebebeb;
+        color: #657b83;
         display: block;
         height: 100%; }
         #sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link:hover, #sidebar ul.sidebar-buttons li.sidebar-button .sidebar-button-link:active {
           text-decoration: none;
-          color: white; }
+          color: #c7d0d4; }
     #sidebar ul.sidebar-buttons:first-child {
       margin-top: 5px; }
 
@@ -1020,7 +1021,7 @@ pre.code-highlight > code {
       #sidebar[data-behavior="1"] .sidebar-profile .sidebar-profile-location {
         font-weight: 400;
         font-size: 1.6rem;
-        color: #ebebeb; }
+        color: #657b83; }
       #sidebar[data-behavior="1"] .sidebar-profile .sidebar-profile-job,
       #sidebar[data-behavior="1"] .sidebar-profile .sidebar-profile-location {
         margin-top: 0;
@@ -1163,7 +1164,7 @@ pre.code-highlight > code {
       #sidebar[data-behavior="4"] .sidebar-profile .sidebar-profile-location {
         font-weight: 400;
         font-size: 1.6rem;
-        color: #ebebeb; }
+        color: #657b83; }
       #sidebar[data-behavior="4"] .sidebar-profile .sidebar-profile-job,
       #sidebar[data-behavior="4"] .sidebar-profile .sidebar-profile-location {
         margin-top: 0;
@@ -2450,7 +2451,7 @@ a.tag--small,
     color: #fff;
     content: attr(data-tooltip);
     font-size: 0.93em;
-    line-height: 1.9em;
+    line-height: 1.5em;
     border-radius: 5px; }
   .tooltip:before, [data-tooltip]:before, .tooltip:after, [data-tooltip]:after {
     position: absolute;
