@@ -12,22 +12,61 @@ tags:
 
 You might have heard of the [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program before,
 a very simple program whose only task is to print _Hello, World!_.
+<!--more-->
 
 Being so simple, it is often used to show the syntax
 of a programming language, at least at a very basic level. On the other hand, being so "useless", a complete newbie
 wouldn't get a very concrete idea of a computer program and would even start questioning computer programming as a whole!
 
-So, let's try to write a program that exposes the fundamental building blocks of programming, being at the same time
-very simple and yet somehow useful.
+So, let's try to write a program that exposes the fundamental building blocks of programming, but is at the same time
+very simple and yet somehow useful. We will be writing the code blocks in the most common Linux shell, the Bourne
+again shell, better known as _bash_ (more on this later).
 
 ### Sequence
 
-The first idea to grasp is 
+The first idea to grasp is the **sequence**. A program, not surprisingly, is executed one instruction after the other.
 
-### Selection
+```
+#!/bin/bash
 
-Do something or something else based on a boolean value
+echo "Hello, World!"
+echo "My name is Joe."
+echo "Goodbye, World!"
+```
+
+Here, the first line (the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) ) is used to specify that the program
+is written in bash, while `echo` is the command that prints the following to screen. The output of this program is, as
+you might expect,
+
+```
+Hello, World!
+My name is Joe.
+Goodbye, World!
+```
+
+It would be inconvenient to say goodbye before even saying hello...
 
 ### Iteration
 
-As long as something is true, keep doing
+Another ingredient is the **iteration**: as long as some condition holds true, keep doing what you are doing.
+In order to show a concrete example, let's imagine the following situation. A colleague of yours took about a
+hundred photos to document some construction work that is taking place at your office. When you save them on your
+computer, their naming is something like `DSC3162.jpg`, `DSC3163.jpg`, `DSC3164.jpg` and so on up to `DSC3271.jpg`.
+You would like to rename them to something like `Baustelle_1.jpg`, `Baustelle_2.jpg` and so on, but you don't want
+to do this by hand, file by file. How?
+
+```
+#!/bin/bash
+
+i=3162
+while (( $i <= 3271 ))
+do
+  j=$(( i-3161 ))
+	mv "DSC${i}.jpg Baustelle_${j}"
+	i=$(( i+1 ))
+done
+```
+
+### Selection
+
+The second ingredient is the selection: do this or that based on whether a condition is true or not.

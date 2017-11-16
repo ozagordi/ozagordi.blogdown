@@ -12,18 +12,37 @@ tags:
 
 
 
-<p>You might have heard of the <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello, World!</a> program before, a very simple program whose only task is to print <em>Hello, World!</em>.</p>
+<p>You might have heard of the <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello, World!</a> program before, a very simple program whose only task is to print <em>Hello, World!</em>. <!--more--></p>
 <p>Being so simple, it is often used to show the syntax of a programming language, at least at a very basic level. On the other hand, being so “useless”, a complete newbie wouldn’t get a very concrete idea of a computer program and would even start questioning computer programming as a whole!</p>
-<p>So, let’s try to write a program that exposes the fundamental building blocks of programming, being at the same time very simple and yet somehow useful.</p>
+<p>So, let’s try to write a program that exposes the fundamental building blocks of programming, but is at the same time very simple and yet somehow useful. We will be writing the code blocks in the most common Linux shell, the Bourne again shell, better known as <em>bash</em> (more on this later).</p>
 <div id="sequence" class="section level3">
 <h3>Sequence</h3>
-<p>The first idea to grasp is</p>
-</div>
-<div id="selection" class="section level3">
-<h3>Selection</h3>
-<p>Do something or something else based on a boolean value</p>
+<p>The first idea to grasp is the <strong>sequence</strong>. A program, not surprisingly, is executed one instruction after the other.</p>
+<pre><code>#!/bin/bash
+
+echo &quot;Hello, World!&quot;
+echo &quot;My name is Joe.&quot;
+echo &quot;Goodbye, World!&quot;</code></pre>
+<p>Here, the first line (the <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a> ) is used to specify that the program is written in bash, while <code>echo</code> is the command that prints the following to screen. The output of this program is, as you might expect,</p>
+<pre><code>Hello, World!
+My name is Joe.
+Goodbye, World!</code></pre>
+<p>It would be inconvenient to say goodbye before even saying hello…</p>
 </div>
 <div id="iteration" class="section level3">
 <h3>Iteration</h3>
-<p>As long as something is true, keep doing</p>
+<p>Another ingredient is the <strong>iteration</strong>: as long as some condition holds true, keep doing what you are doing. In order to show a concrete example, let’s imagine the following situation. A colleague of yours took about a hundred photos to document some construction work that is taking place at your office. When you save them on your computer, their naming is something like <code>DSC3162.jpg</code>, <code>DSC3163.jpg</code>, <code>DSC3164.jpg</code> and so on up to <code>DSC3271.jpg</code>. You would like to rename them to something like <code>Baustelle_1.jpg</code>, <code>Baustelle_2.jpg</code> and so on, but you don’t want to do this by hand, file by file. How?</p>
+<pre><code>#!/bin/bash
+
+i=3162
+while (( $i &lt;= 3271 ))
+do
+  j=$(( i-3161 ))
+    mv &quot;DSC${i}.jpg Baustelle_${j}&quot;
+    i=$(( i+1 ))
+done</code></pre>
+</div>
+<div id="selection" class="section level3">
+<h3>Selection</h3>
+<p>The second ingredient is the selection: do this or that based on whether a condition is true or not.</p>
 </div>
