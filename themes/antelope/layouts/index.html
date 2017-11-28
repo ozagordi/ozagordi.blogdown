@@ -1,0 +1,61 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ $.Param "description" }}">
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .Site.BaseURL }}css/bootstrap.css" rel="stylesheet">
+  <link href="{{ .Site.BaseURL }}css/antelope.css" rel="stylesheet">
+</head>
+
+<body>
+
+  {{ partial "nav.html" . }}
+
+  <!-- Page Header -->
+  <header class="intro-header" style="background-image: url('/img/header_gsl2.jpg')">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="site-heading">
+            <h1>Sharp Bell</h1>
+            <hr class="small">
+            <span class="subheading">Skiving on data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <!-- <div id="article">
+        <h1>{{.Title}}</h1> -->
+        {{ range .Data.Pages }}
+        <div class="post-preview">
+          <a href="{{ .RelPermalink }}">
+            <h2 class="post-title"> {{ .Title }}
+            </h2>
+            {{ with .Params.subtitle }}
+            <h3 class="post-subtitle">
+              {{.}}
+            </h3>
+            {{ end }}
+          </a>
+          <p class="post-meta">Posted by {{ if $.Param "author" }}{{ $.Param "author" }}{{ else }}{{ .Title }}{{ end }} on {{ .Date.Format "2006-02-01" }}</p>
+        </div>
+        <hr>
+        {{ end }}
+
+
+        {{ partial "footer.html" . }}
+        {{ partial "script.html" . }}
+
+      </body>
+      </html>
