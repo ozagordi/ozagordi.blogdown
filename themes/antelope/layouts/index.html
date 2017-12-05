@@ -1,15 +1,6 @@
-<html>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ .Title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ $.Param "description" }}">
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-  <link href="{{ .Site.BaseURL }}css/bootstrap.css" rel="stylesheet">
-  <link href="{{ .Site.BaseURL }}css/antelope.css" rel="stylesheet">
-</head>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" .}}
 
 <body>
 
@@ -19,7 +10,7 @@
   <header class="intro-header" style="background-image: url('/img/header_gsl2.jpg')">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
           <div class="site-heading">
             <h1>Sharp Bell</h1>
             <hr class="small">
@@ -33,7 +24,7 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="col-lg-12 col-lg-offset-2 col-md-10 col-md-offset-1">
 
         <!-- <div id="article">
         <h1>{{.Title}}</h1> -->
@@ -48,14 +39,17 @@
             </h3>
             {{ end }}
           </a>
-          <p class="post-meta">Posted by {{ if $.Param "author" }}{{ $.Param "author" }}{{ else }}{{ .Title }}{{ end }} on {{ .Date.Format "2006-02-01" }}</p>
+          <p class="post-meta">Posted on {{ .Date.Format "2006-02-01" }} {{ if $.Param "author" }} by {{ $.Param "author" }}{{ end }} </p>
         </div>
         <hr>
         {{ end }}
+      </div>
+    </div>
+  </div>
 
+  {{ partial "footer.html" . }}
+  {{ partial "script.html" . }}
 
-        {{ partial "footer.html" . }}
-        {{ partial "script.html" . }}
+</body>
 
-      </body>
-      </html>
+</html>

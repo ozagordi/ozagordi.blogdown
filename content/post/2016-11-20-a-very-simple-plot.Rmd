@@ -109,5 +109,4 @@ p <- ggplot(trains, aes(x=time, y=d, group=train_track, colour=track)) +
 ```
 
 
-
 Header image via [Flickr](https://flic.kr/p/q8P66v) (under CC BY-ND 2.0).

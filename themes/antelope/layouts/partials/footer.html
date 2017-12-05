@@ -1,7 +1,13 @@
-  <footer>
-  {{ partial "foot_custom.html" . }}
-  {{ with .Site.Params.footer }}
-  <hr/>
+<footer>
+{{ partial "foot_custom.html" . }}
+{{ with .Site.Params.footer }}
   {{ . | markdownify }}
-  {{ end }}
-  </footer>
+{{ end }}
+
+<div id="social-wrapper">
+  {{ with .Site.Params.twitter }} <a href="https://www.twitter.com/{{.}}"><i class="fa fa-twitter-square"></i>Twitter</a> | {{end}}
+  {{ with .Site.Params.linkedin }} <a href="https://www.linkedin/com/in/{{ . }}"><i class="fa fa-linkedin-square"></i>Linkedin</a> | {{end}}
+  {{ with .Site.Params.github }} <a href="https://www.github.com/{{ . }}"><i class="fa fa-github-square"></i> GitHub </a> {{end}}
+  {{ with .Site.Params.facebook }} <a href="{{ . }}"><i class="fa fa-facebook-square"></i> facebook </a> | {{end}}
+ </div>
+</footer>

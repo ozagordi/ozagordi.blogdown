@@ -8,6 +8,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
 
+[params]
+    description = "Sharp bell: personal blog of Osvaldo Zagordi. University of Zurich and founder of enGene Statistics. Data science, statistics, science, machine learning, python, R and so on."
+    footer = "&copy; Osvaldo Zagordi 2017" # | [Github](https://github.com/ozagordi) | [Twitter](https://twitter.com/ozagordi)"
+    twitter = "ozagordi"
+    linkedin = "ozagordi"
+    github = "ozagordi"
+
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
     note = "/note/:year/:month/:day/:slug/"
@@ -31,7 +38,3 @@ footnotereturnlinkcontents = "↩"
 [[menu.main]]
     name = "Subscribe"
     url = "/index.xml"
-
-[params]
-    description = "Sharp bell: personal blog of Osvaldo Zagordi. University of Zurich and founder of enGene Statistics. Data science, statistics, science, machine learning, python, R and so on."
-    footer = "&copy; Osvaldo Zagordi 2017 | [Github](https://github.com/ozagordi) | [Twitter](https://twitter.com/ozagordi)"
