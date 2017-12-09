@@ -17,17 +17,6 @@
             </a>
           </li>
 
-          {{ with .Site.Params.twitter }}
-          <li class="list-inline-item">
-            <a href="https://twitter.com/{{.}}">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {{ end }}
-
           {{ with .Site.Params.linkedin }}
           <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/{{.}}">
@@ -60,6 +49,29 @@
             </a>
           </li>
           {{ end }}
+
+          {{ with .Site.Params.twitter }}
+          <li class="list-inline-item">
+            <a href="https://twitter.com/{{.}}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
+
+          {{ with .Site.Params.instagram }}
+          <li class="list-inline-item">
+            <a href="https://instagram.com/{{.}}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {{ end }}
+
         </ul>
 
         <p class="copyright text-muted">Copyright &copy; Osvaldo Zagordi 2017</p>

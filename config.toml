@@ -13,6 +13,7 @@ footnotereturnlinkcontents = "↩"
     twitter = "ozagordi"
     linkedin = "ozagordi"
     github = "ozagordi"
+    instagram = "osvaldo.zagordi"
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
