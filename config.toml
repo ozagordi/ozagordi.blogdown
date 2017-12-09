@@ -10,7 +10,6 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "Sharp bell: personal blog of Osvaldo Zagordi. University of Zurich and founder of enGene Statistics. Data science, statistics, science, machine learning, python, R and so on."
-    footer = "&copy; Osvaldo Zagordi 2017" # | [Github](https://github.com/ozagordi) | [Twitter](https://twitter.com/ozagordi)"
     twitter = "ozagordi"
     linkedin = "ozagordi"
     github = "ozagordi"
@@ -26,6 +25,10 @@ footnotereturnlinkcontents = "↩"
 [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Visual résumé"
+    url = "/vr/"
     weight = 2
 [[menu.main]]
     name = "Categories"

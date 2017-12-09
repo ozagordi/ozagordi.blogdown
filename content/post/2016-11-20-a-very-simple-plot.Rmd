@@ -4,11 +4,7 @@ author: "Osvaldo"
 categories: ["data"]
 tags: ["dataviz"]
 date: "2016-11-20"
-coverImage: "/img/alps.jpg"
-thumbnailImage: "/img/alps_tn.jpg"
-coverMeta: out
-thumbnailImagePosition: left
-metaAlignment: center
+headerimg: "/img/alps.jpg"
 ---
 
 ```{r setup, include=FALSE}

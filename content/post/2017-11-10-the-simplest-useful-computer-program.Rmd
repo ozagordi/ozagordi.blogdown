@@ -1,8 +1,10 @@
 ---
 title: The simplest useful computer program
+subtitle: How a theorem helped writing better programs
 author: Osvaldo
 date: '2017-11-10'
 slug: the-simplest-useful-computer-program
+headerimg: /img/alps.jpg
 categories:
   - programming
 tags:
@@ -13,6 +15,7 @@ tags:
 You might have heard of the [Hello, World!](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) program before,
 a very simple program whose only task is to print _Hello, World!_.
 <!--more-->
+
 
 Being so simple, it is often used to show the syntax
 of a programming language, at least at a very basic level. On the other hand, being so "useless", a complete newbie
