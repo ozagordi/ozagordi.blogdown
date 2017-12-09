@@ -2,7 +2,7 @@
 title: "Confidence interval and hypothesis test"
 author: "Osvaldo"
 categories: ["statistics"]
-tags: ["statistical inference", "nhst", "confindence interval", "binomial"]
+tags: ["statistical inference", "nhst", "confidence interval", "binomial"]
 date: "2016-07-07"
 ---
 

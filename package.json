@@ -50,6 +50,8 @@
     "rand-token": "^0.2.1"
   },
   "dependencies": {
-    "imagemin-jpegoptim": "^5.1.0"
+    "imagemin-jpegoptim": "^5.1.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
   }
 }
