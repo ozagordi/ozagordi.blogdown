@@ -5,7 +5,7 @@
  */
 
 body {
-  font-family: 'Lora', 'Hevetica Neue', sans-serif;
+  font-family: 'Abel', 'Hevetica Neue', sans-serif;
   font-size: 20px;
   background-color: #fdf6e3;
   /*color: #404040;*/
@@ -226,7 +226,7 @@ hr.small {
   font-weight: 600;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
