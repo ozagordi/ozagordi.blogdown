@@ -26,7 +26,8 @@
   </header>
 
   <main>
-    <div class="container">
+    <!--div class="container"-->
+    <article>
       <div class="row justify-content-md-center">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ with .Params.author }}<h2 class="author"><small class="text-muted">Posted by {{ . }}</small></h2>{{ end }}
@@ -37,7 +38,8 @@
           <hr>
         </div>
       </div>
-    </div>
+    </article>
+    <!--/div-->
   </main>
 
   {{ partial "footer.html" . }}
