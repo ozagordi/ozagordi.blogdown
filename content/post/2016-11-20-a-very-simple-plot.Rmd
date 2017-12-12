@@ -16,8 +16,7 @@ lines. An intricate network of red lines of different thickness,
 cutting diagonally a regular grey grid.
 
 ```{r echo=FALSE}
-blogdown::shortcode('figure', src = 'https://www.edwardtufte.com/tufte/graphics/vdqi_bookcover.gif',
-                    alt = 'VDQI bookcover',
+blogdown::shortcode('figure', src = '/img/vdqi_bookcover.png', alt = 'VDQI bookcover',
                     class = "figure-img img-fluid rounded")
 ```
 
