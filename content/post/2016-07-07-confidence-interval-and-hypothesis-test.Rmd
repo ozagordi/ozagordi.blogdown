@@ -4,6 +4,7 @@ author: "Osvaldo"
 categories: ["statistics"]
 tags: ["statistical inference", "nhst", "confidence interval", "binomial"]
 date: "2016-07-07"
+mathjax: "true"
 ---
 
 ## If all tests are negative, the positive rate is zero. And its confidence interval?
