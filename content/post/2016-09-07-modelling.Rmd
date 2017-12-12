@@ -44,7 +44,11 @@ taking place in the lab. Thus, it is easily interpretable.
 
 It was great, but it took quite some time.
 
-![Graphical representation of a generative model](/img/model.png)
+```{r echo=FALSE}
+blogdown::shortcode('figure', src = '/img/model.png',
+                    alt = 'A generative model', class ='figure-img img-fluid rounded',
+                    caption = 'Graphical representation of a generative model')
+```
 
 But do you always need such a model? According to [some](http://r4ds.had.co.nz/model-intro.html),
 <q>the goal of a model is to provide a simple low-dimensional summary of a dataset</q>,

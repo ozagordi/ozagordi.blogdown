@@ -1,8 +1,12 @@
 /*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
+ * Adapted from Clean Blog v1.0.0 (http://startbootstrap.com)
  * Copyright 2015 Start Bootstrap
  * Licensed under MIT (https://spdx.org/licenses/MIT)
  */
+
+img, embed, object, video {
+  max-width: 100%;
+}
 
 body {
   font-family: 'Abel', 'Hevetica Neue', sans-serif;
