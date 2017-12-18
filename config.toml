@@ -2,7 +2,6 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Sharp bell"
 theme = "antelope"
-googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
@@ -14,6 +13,7 @@ footnotereturnlinkcontents = "↩"
     linkedin = "ozagordi"
     github = "ozagordi"
     instagram = "osvaldo.zagordi"
+    googleAnalytics = "UA-80133486-1"
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
