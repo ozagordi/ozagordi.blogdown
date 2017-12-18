@@ -1,0 +1,48 @@
+---
+title: Tertiary education in OECD countries
+author: Osvaldo
+date: '2017-12-19'
+slug: tertiary-education-in-oecd-countries
+draft: true
+categories:
+  - data
+tags:
+  - dataviz
+  - country statistics
+---
+
+```{r main_plot, echo=FALSE, message=FALSE, warning=FALSE}
+library(readr)
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(widgetframe)
+
+cpalette <- c('#bdc9e1', '#74a9cf', '#2b8cbe', '#045a8d')
+all_data <- read.csv("tables/education_oecd.csv", sep = ",")
+edu <- all_data %>%
+  filter(ISC11A %in% c('L5', 'L6', 'L7', 'L8'),
+         Measure == 'Value',
+         Reference.year == 'Latest available year',
+         SEX == 'T') %>%
+  select(country_code, ISC11A, Value) %>%
+  group_by(country_code) %>%
+  spread(ISC11A, Value) %>%
+  mutate(L5 = ifelse(is.na(L5), 0.0, round(L5, 1))) %>%
+  mutate(L6 = ifelse(is.na(L6), 0.0, round(L6, 1))) %>%
+  mutate(L7 = ifelse(is.na(L7), 0.0, round(L7, 1))) %>%
+  mutate(L8 = ifelse(is.na(L8), 0.0, round(L8, 1))) %>%
+  arrange(desc(L7))
+edu$country_code <- factor(edu$country_code, levels = edu$country_code)
+
+p <- plot_ly(edu, x = ~country_code, y = ~L7, type = 'bar', name = "Master's",
+             marker = list(color = cpalette[4])) %>%
+  add_trace(y = ~L8, name = "Doctoral", marker = list(color = cpalette[3])) %>%
+  add_trace(y = ~L6, name = "Bachelor's", marker = list(color = cpalette[2])) %>%
+  add_trace(y = ~L5, name = "Short-cycle", marker = list(color = cpalette[1])) %>%
+  layout(xaxis = list(title = '', tickangle = -90)) %>%
+  layout(yaxis = list(title = 'percentage of population 22-64'), barmode = 'stack')
+frameWidget(p)
+
+```
+
