@@ -1,4 +1,4 @@
-baseurl = "https://ozagordi.rbind.io"
+baseurl = "https://ozagordi.rbind.io/"
 languageCode = "en-us"
 title = "Sharp bell"
 theme = "antelope"
