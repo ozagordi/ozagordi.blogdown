@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://ozagordi.rbind.io"
 languageCode = "en-us"
 title = "Sharp bell"
 theme = "antelope"
@@ -6,6 +6,9 @@ disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
+
+[author]
+    name = "Osvaldo Zagordi"
 
 [params]
     description = "Sharp bell: personal blog of Osvaldo Zagordi. University of Zurich and founder of enGene Statistics. Data science, statistics, science, machine learning, python, R and so on."
