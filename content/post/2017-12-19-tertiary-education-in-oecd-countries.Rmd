@@ -29,7 +29,8 @@ either have a Master or nothing.
 
 OECD makes available a table with the fraction of the population that
 has attained different levels of education (data from 2016). For tertiary education, this is split
-over Bachelor's, Master's, Short-cycle tertiary and Doctoral degrees.
+over Bachelor's, Master's, Short-cycle tertiary and Doctoral degrees. The numbers are shown in
+the plot below (Italy is between Finland and E22, the plot is zoomable).
 
 ```{r main_plot, echo=FALSE, message=FALSE, warning=FALSE}
 library(readr)
@@ -66,7 +67,7 @@ frameWidget(p)
 ```
 
 The fraction of the population with a Master's degree or equivalent in Italy is 13.7 %, exactly
-equivalent to the EU22 average and slightly higher than the OECD average (11.9%). Only 3.6% have a
+equivalent to the E22 average and slightly higher than the OECD average (11.9%). Only 3.6% have a
 Bachelor's, though, while the EU22 average is 13.2 %.
 
 If we want to see the prevalence of tertiary degrees by age group, data are not split anymore by
