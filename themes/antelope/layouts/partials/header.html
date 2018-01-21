@@ -17,11 +17,11 @@ gtag('config', '{{.}}');
 {{ end }}
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="{{$.Param "baseurl"}}/{{ $.URL }}" />
+<meta property="og:url" content="{{$.Site.BaseURL}}{{ $.URL }}" />
 {{ if .Params.headerimg }}
-<meta property="og:image" content="{{ .Params.headerimg }}" />
+<meta property="og:image" content="{{ $.Site.BaseURL }}{{ .Params.headerimg }}" />
 {{ else }}
-<meta property="og:image" content="{{ $.Param "baseurl" }}/img/header_gsl2.jpg" />
+<meta property="og:image" content="{{ $.Site.BaseURL }}/img/header_gsl2.jpg" />
 {{ end }}
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
