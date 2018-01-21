@@ -10,6 +10,20 @@ gtag('config', '{{.}}');
 {{ end }}
 <meta charset="utf-8">
 <title>{{ .Title }}</title>
+
+<meta name="twitter:card" content="summary" />
+{{ with .Site.Params.twitter }}
+<meta name="twitter:creator" content="{{.}}" />
+{{ end }}
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{$.Param "baseurl"}}/{{ $.URL }}" />
+{{ if .Params.headerimg }}
+<meta property="og:image" content="{{ .Params.headerimg }}" />
+{{ else }}
+<meta property="og:image" content="{{ $.Param "baseurl" }}/img/header_gsl2.jpg" />
+{{ end }}
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ $.Param "description" }}">
 {{ if .RSSLink }}
