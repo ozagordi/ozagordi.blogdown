@@ -11,9 +11,9 @@ footnotereturnlinkcontents = "↩"
     name = "Osvaldo Zagordi"
 
 [params]
-    description = "Sharp bell: personal blog of Osvaldo Zagordi. University of Zurich and founder of enGene Statistics. Data science, statistics, science, machine learning, python, R and so on."
+    description = "Sharp bell: personal blog of Osvaldo Zagordi, physicist by background. Data science, statistics, science, machine learning, python, R and so on."
     twitter = "ozagordi"
-    linkedin = "ozagordi"
+    linkedin = "osvaldozagordi"
     github = "ozagordi"
     instagram = "osvaldo.zagordi"
     googleAnalytics = "UA-80133486-1"
@@ -29,10 +29,6 @@ footnotereturnlinkcontents = "↩"
 [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 2
-[[menu.main]]
-    name = "Visual résumé"
-    url = "/vr/"
     weight = 2
 [[menu.main]]
     name = "Categories"
