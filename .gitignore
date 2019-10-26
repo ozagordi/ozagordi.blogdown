@@ -5,3 +5,4 @@ public/
 .Rproj.user
 node_modules
 themes/tranquilpeak/package-lock.json
+static/tables/
