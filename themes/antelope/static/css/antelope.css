@@ -41,7 +41,7 @@ p a {
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
-    color: #268bd2;
+    color: #fdf6e3;
 }
 h2,
 h3,
@@ -205,7 +205,7 @@ hr.small {
   line-height: 1.1;
   display: block;
   font-family: 'Abel', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #268bd2;
+  color: #fdf6e3;
   font-weight: 300;
   margin: 10px 0 0;
 }
