@@ -12,7 +12,7 @@ tags:
   - dataviz
 ---
 
-_Attention conservation notice: a few hundred words on something that could have been summarized in just the figure plus a number. Say, a tweet._
+_Attention conservation notice:_ a few hundred words on something that could have been summarized in just the figure plus a number (in other words, a tweet).
 
 #### Background
 
@@ -44,4 +44,4 @@ It went above this level already in the 50's, and it is now over 410 ppm (412, a
 So, whoever wants to make the point that it's not so bad after all, should at least keep in mind that
 the very last part of that graph has been cut. At least.
 
-Photo by [Adam Jang](https://unsplash.com/@adamjang) on Unsplash
+Photo by [Samuel Ferrara](https://unsplash.com/@samferrara) on Unsplash
